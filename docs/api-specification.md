@@ -63,7 +63,29 @@ Error status: 404 Not Found.
 
 PUT /products/{product_id}
 Purpose: Update an existing product.
+
+Request body:
+{
+      "name": "Classic Black Heel",
+      "sku": "MH-001",
+      "size": "39",
+      "colour": Black",
+      "price": 27000,
+      "stock_quantity": 15
+}
 Success status: 200 OK.
+
+Response body:
+{
+  "id": 1,
+  "name": "Classic Black Heel",
+  "sku": "MH-001",
+  "size": "39",
+  "colour": "Black",
+  "price": 27000,
+  "stock_quantity": 15
+}
+
 Error status: 404 Not Found.
 
 DELETE /products/{product_id}
