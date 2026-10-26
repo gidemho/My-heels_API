@@ -32,6 +32,10 @@ products = [
         "stock": 15
     }
 ]
+@app.get("/products")
+def get_all_products():
+    return products
+    
 @app.get("/products/{product_id}")
 def get_products(product_id: int):
     for product in products:
